@@ -59,7 +59,7 @@ def test_kazoo(conn_lsn: dict) -> None:
             after_delete = client.get_children('/')
             print('before_delete: {0} \n\nafter_delete: {1}'.format(before_delete, after_delete))
 
-        # print node data
+        # print link data
         print("================ 5. output patroni cluster data =================")
         output_znode_data(client, path_01)
 
